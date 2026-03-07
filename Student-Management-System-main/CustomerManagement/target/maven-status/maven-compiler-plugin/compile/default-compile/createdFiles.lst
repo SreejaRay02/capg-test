@@ -1,0 +1,7 @@
+com\capgemini\CustomerManagement\impl\OrderDAOImpl.class
+com\capgemini\CustomerManagement\entity\Customer.class
+com\capgemini\CustomerManagement\App.class
+com\capgemini\CustomerManagement\entity\Order.class
+com\capgemini\CustomerManagement\dao\OrderDAO.class
+com\capgemini\CustomerManagement\dao\CustomerDAO.class
+com\capgemini\CustomerManagement\impl\CustomerDAOImpl.class
