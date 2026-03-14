@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="address" class="Cap.Spring_Test_1.Address">
+
+<property name="id" value="1"/>
+<property name="city" value="Bangalore"/>
+<property name="state" value="Karnataka"/>
+<property name="country" value="India"/>
+<property name="pincode" value="560001"/>
+
+</bean>
+
+<bean id="employee" class="Cap.Spring_Test_1.Employee">
+
+<constructor-arg ref="address"/>
+
+<property name="id" value="101"/>
+<property name="name" value="Mike"/>
+<property name="email" value="mike@gmail.com"/>
+<property name="password" value="12345"/>
+<property name="age" value="28"/>
+<property name="salary" value="60000"/>
+
+</bean>
+
+<bean id="empService" class="Cap.Spring_Test_1.EmployeeServiceImpl">
+
+<property name="employee" ref="employee"/>
+
+</bean>
+
+</beans>
